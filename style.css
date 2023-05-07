@@ -1,0 +1,13 @@
+hr.hr1
+{
+    border-top: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.alt_bolum
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
