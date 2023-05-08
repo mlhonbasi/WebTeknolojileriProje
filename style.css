@@ -11,3 +11,26 @@ hr.hr1
     bottom: 0;
     width: 100%;
 }
+table 
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: larger;
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+    overflow-x: auto;
+}
+  
+td, th
+{
+    border: 5px solid #343434;
+    text-align: left;
+    padding: 10px;
+}
+.hakkimda
+{
+    font-size: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
