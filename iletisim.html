@@ -1,56 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-        <a class="navbar-brand" href="index.html">Anasayfa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sehir.html">Şehrim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="miras.html">Mirasımız</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="index.html">Anasayfa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sehir.html">Şehrim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="miras.html">Mirasımız</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3 class="text-center p-5 text-dark">İletişim Bilgileriniz</h3>
+    <form action="mesaj.html" name="form-icerik" onsubmit="return formControl()">
+      <div class="form-row">
+        <div class="col">
+          <label for="ad">Ad</label>
+          <input type="text" name ="ad" class="form-control" placeholder="Adınız." required>
+        </div>      
+        <div class="col">
+          <label for="soyad">Soyad</label>
+          <input type="text" name="soyad" class="form-control" placeholder="Soyadınız.">
         </div>
-    </nav>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="col">
+          <label for="eposta">E-posta</label>
+          <input type="email" class="form-control" name="eposta" placeholder="E-posta adresinizi giriniz.">
+        </div>
+        <div class="col">
+          <label for="telefon">Telefon</label>
+          <input type="text" class="form-control" name="telefon" placeholder="5XX XXX XXXX / 5XXXXXXXXX">
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="adres">Adres</label>
+        <input type="text" class="form-control" name="adres" placeholder="Adres bilgileriniz.">
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="check">
+          <label class="form-check-label" for="check">
+            Bilgilerimi onaylıyorum.
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" >Gönder</button>
+    </form>
+  </div>
+
+  <script>
+    function formControl()
+    {
+      var ad = document.forms["form-icerik"]["ad"].value;
+      var soyad = document.forms["form-icerik"]["soyad"].value;
+      var mail = document.forms["form-icerik"]["eposta"].value;
+      var telefon = document.forms["form-icerik"]["telefon"].value;
+      var adres = document.forms["form-icerik"]["adres"].value;
+      var checkValue = document.forms["form-icerik"]["check"].checked;
+
+      if(ad == "")
+      {
+        alert("İsim boş bırakılmamalıdır!")
+        return false;
+      }
+      if(soyad == "")
+      {
+        alert("Soyad boş bırakılmamalıdır!")
+        return false;
+      }
+      if(mail == "")
+      {
+        alert("E-posta boş bırakılmamalıdır!")
+        return false;
+      }
+      if(telefon == "")
+      {
+        alert("Telefon boş bırakılmamalıdır!")
+        return false;
+      }
+      if(adres == "")
+      {
+        alert("Adres boş bırakılmamalıdır!")
+        return false;
+      }
+      
+      var mailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(!mailRegex.test(mail))
+      {
+        alert("E-posta adresiniz geçersiz biçimde!")
+        return false;
+      }
+
+      var telefonRegex = /^(5)([0-9]{2})\s?([0-9]{3})\s?([0-9]{2})\s?([0-9]{2})$/;
+      if(!telefonRegex.test(telefon))
+      {
+        alert("Telefon numaranız geçersiz biçimde!")
+        return false;
+      }
+
+      if(!checkValue)
+      {
+        alert("Bilgilerimi onaylıyorum kutucuğunu işaretleyiniz!")
+        return false;
+      }
+    }
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
 </body>
+
 </html>
