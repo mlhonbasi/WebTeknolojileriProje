@@ -49,12 +49,12 @@
         if(($_POST["email"] == $eposta) && ($_POST["passw"] == $sifre))
         {
             echo "<h1>Hoş Geldiniz</h1>";
-        }
+        }      
         else
         {
             echo "Giriş bilgileriniz hatalı!";
         }
-        ?>
+    ?>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
