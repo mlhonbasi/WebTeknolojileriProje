@@ -7,9 +7,11 @@ hr.hr1
 
 .alt_bolum
 {
-    position: fixed;
+    position:relative;
     bottom: 0;
     width: 100%;
+    left: 0;
+    height: 80px;
 }
 table 
 {
@@ -68,4 +70,29 @@ td, th
 {
     width: 70%;
     height: 80%;
+}
+#sl1
+{
+    width: 70%;
+    height: 40%;
+}
+#sl2
+{
+    width: 70%;
+    height: 40%;
+}
+
+#sl3
+{
+    width: 70%;
+    height: 40%;
+}
+body {
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+textarea
+{
+    width: 300px;
+    height: 100px;
 }

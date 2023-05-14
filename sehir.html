@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 
         <a class="navbar-brand" href="index.html">Anasayfa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -53,18 +53,25 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="img/ulucami2.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>foto1</h5>
-                    <p>aciklama</p>
+                <a href="sl1.html">
+                    <img class="d-block w-100" src="img/ulucami2.jpg" id="sl1" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>foto1</h5>
+                        <p>aciklama</p>
+                      </div>
                   </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/ulucami3.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/ulucamii.jpg" alt="Third slide">
-              </div>
+                </a>
+                <a href="sl2.html">
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/ulucami3.jpg" id="sl2" alt="Second slide">
+                      </div>
+                </a>
+             <a href="sl3.html">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ulucamii.jpg" id="sl3" alt="Third slide">
+                  </div>
+             </a>
+              
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,11 +85,7 @@
     </div>
     
 
-    <footer class="bg-dark text-center text-lg-start alt_bolum">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p class="text-light">Web Teknolojileri Proje</p>
-        </div>
-    </footer>
+   
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
