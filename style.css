@@ -8,10 +8,12 @@ hr.hr1
 .alt_bolum
 {
     position:relative;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
-    left: 0;
-    height: 80px;
+    left: 0px;
+    height: 75px;
+    padding-bottom: 0px;
+    align-self: flex-end;
 }
 table 
 {
@@ -87,9 +89,12 @@ td, th
     width: 70%;
     height: 40%;
 }
-body {
-    padding-bottom: 120px;
+body{
+    padding-bottom: 0px;
     padding-top: 50px;
+    min-height: 100vh;
+    flex-direction: column;
+    display: grid;
 }
 textarea
 {
