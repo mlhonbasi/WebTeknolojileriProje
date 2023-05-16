@@ -52,7 +52,7 @@
         }      
         else
         {
-            echo "Giriş bilgileriniz hatalı!";
+            header( 'Location: /login.html' );
         }
     ?>
     

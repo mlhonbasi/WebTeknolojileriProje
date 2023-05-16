@@ -43,6 +43,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="container">
         <h1 class="text-center text-dark p-5">MESAJ GÖNDERİMİ BAŞARILI</h1>
 
@@ -64,46 +65,47 @@
             var mesaj = getParameterByName('mesaj');
         </script>
 
-<div class="card container-fluid align-items-center text-center border-dark" ">
-    <h1>İletişim Bilgileriniz</h1>
-        <div class="card-body">
-            <h5 class="card-title">Ad</h5>
+        <div class="card container-fluid align-items-center text-center border-dark" ">
+            <h1>İletişim Bilgileriniz</h1>
+            <div class=" card-body">
+                <h5 class="card-title">Ad</h5>
             <script>
                 document.write(ad)
             </script>
+                </div>
+            <div class="card-body">
+                <h5 class="card-title">Soyad</h5>
+                <script>
+                    document.write(soyad)
+                </script>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">E-posta</h5>
+                <script>
+                    document.write(eposta)
+                </script>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Telefon</h5>
+                <script>
+                    document.write(telefon)
+                </script>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Mesaj</h5>
+                <script>
+                    document.write(mesaj)
+                </script>
+            </div>
         </div>
-        <div class ="card-body">
-            <h5 class="card-title">Soyad</h5>
-            <script>
-                document.write(soyad)
-            </script>
-        </div>
-        <div class = "card-body">
-            <h5 class="card-title">E-posta</h5>
-            <script>
-                document.write(eposta)
-            </script>
-        </div>   
-        <div class ="card-body">
-            <h5 class="card-title">Telefon</h5>
-            <script>
-                document.write(telefon)
-            </script>
-        </div>
-    <div class = "card-body">
-        <h5 class="card-title">Mesaj</h5>
-        <script>
-            document.write(mesaj)
-        </script>
     </div>
-</div>
 
-   
-<footer class="bg-dark text-center text-lg-start alt_bolum">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p class="text-light">Web Teknolojileri Proje</p>
-    </div>
-</footer>
+
+    <footer class="bg-dark text-center text-lg-start alt_bolum">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="text-light">Web Teknolojileri Proje</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
