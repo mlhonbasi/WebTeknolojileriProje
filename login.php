@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şehrim</title>
+    <title>Giriş Yap</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -13,48 +13,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 
-        <a class="navbar-brand" href="index.html">Anasayfa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sehir.html">Şehrim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="miras.html">Mirasımız</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <a class="navbar-brand" href="index.html">Anasayfa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sehir.html">Şehrim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="miras.html">Mirasımız</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container">
     <?php
         $eposta = "g221210350@sakarya.edu.tr";
         $sifre = "g221210350";
         if(($_POST["email"] == $eposta) && ($_POST["passw"] == $sifre))
         {
-            echo "<h1>Hoş Geldiniz</h1>";
+            echo "<h1>Hoş Geldiniz. Giriş Başarılı.</h1>";
         }      
         else
         {
-            header( 'Location: /login.html' );
+            echo "<h1>Giriş bilgileri hatalı. Tekrar deneyiniz.<h1>";
+            header("Refresh: 1; url=login.html");
         }
     ?>
+    </div>
+   
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -65,6 +70,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </body>
 
 </html>

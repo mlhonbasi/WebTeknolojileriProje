@@ -1,22 +1,20 @@
-hr.hr1
-{
+hr.hr1 {
     border-top: 1px solid black;
     width: 50%;
     margin: 0 auto;
 }
 
-.alt_bolum
-{
-    position:relative;
-    bottom: 0px;  
+.alt_bolum {
+    position: relative;
+    bottom: 0px;
     left: 0px;
     padding-bottom: 0px;
     align-self: flex-end;
     width: 100%;
     height: 75px;
 }
-table 
-{
+
+table {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: larger;
     border-collapse: collapse;
@@ -26,20 +24,20 @@ table
     background-color: beige;
     overflow-x: auto;
 }
-  
-td, th
-{
+
+td,
+th {
     border: 5px solid #343434;
     text-align: left;
     padding: 10px;
 }
-.hakkimda
-{
+
+.hakkimda {
     font-size: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
-.loginform
-{
+
+.loginform {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -48,8 +46,8 @@ td, th
     padding: 20px;
     min-height: 100%;
 }
-#formIcerik
-{
+
+#formIcerik {
     border-radius: 10px 10px 10px 10px;
     background: #343a40;
     padding: 30px;
@@ -58,58 +56,61 @@ td, th
     position: relative;
     text-align: center;
 }
-#ulucami1
-{
+
+#ulucami1 {
     width: 70%;
     height: 80%;
 }
-#ulucami2
-{
+
+#ulucami2 {
     width: 70%;
     height: 80%;
 }
-#ulucami3
-{
+
+#ulucami3 {
     width: 70%;
     height: 80%;
 }
-#sl1
-{
-    width: 70%;
-    height: 40%;
-}
-#sl2
-{
+
+#sl1 {
     width: 70%;
     height: 40%;
 }
 
-#sl3
-{
+#sl2 {
     width: 70%;
     height: 40%;
 }
-body
-{
+
+#sl3 {
+    width: 70%;
+    height: 40%;
+}
+
+body {
     padding-bottom: 0px;
     padding-top: 50px;
     min-height: 100vh;
     flex-direction: column;
     display: grid;
     height: fit-content;
-    
+
 }
-textarea
-{
+
+textarea {
     width: 300px;
     height: 100px;
 }
-.d-block
-{
+
+.d-block {
     height: 500px;
     width: 100%;
 }
-.sl1content
-{
+
+.sl1content {
     padding-top: 40px;
+}
+
+.apigrup {
+    padding-top: 50px;
 }
