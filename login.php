@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Yap</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -32,7 +32,7 @@
                 <a class="nav-link" href="miras.html">Mirasımız</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ilgialan.html">İlgi Alanlarım</a>
+                <a class="nav-link" href="ilgialani.html">İlgi Alanlarım</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="iletisim.html">İletişim</a>
@@ -54,8 +54,8 @@
         }      
         else
         {
-            echo "<h1>Giriş bilgileri hatalı. Tekrar deneyiniz.<h1>";
-            header("Refresh: 1; url=login.html");
+            echo "<h1>Giriş bilgileri hatalı. Tekrar deneyiniz...<h1>";
+            header("Refresh: 2; url=login.html");
         }
     ?>
     </div>

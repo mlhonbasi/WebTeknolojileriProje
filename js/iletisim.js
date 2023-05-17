@@ -7,6 +7,17 @@ function formControl()
       var adres = document.forms["form-icerik"]["adres"].value;
       var checkValue = document.forms["form-icerik"]["check"].checked;
       var mesaj = document.forms["form-icerik"]["mesaj"].value;
+      
+      var tercihRadios = document.getElementsByName('tercih');
+      var durum = false;
+      for (var i = 0; i < tercihRadios.length; i++) 
+      {
+        if (tercihRadios[i].checked) 
+        {
+          durum = true;
+          break;
+        }
+      }
 
       if(ad == "")
       {
@@ -36,6 +47,11 @@ function formControl()
       if(mesaj == "")
       {
         alert("Mesaj kısmı boş bırakılmamalıdır!")
+        return false;
+      }
+      if(!durum)
+      {
+        alert("Mesajınıza geri dönüş tercihinizi seçiniz!")
         return false;
       }
       

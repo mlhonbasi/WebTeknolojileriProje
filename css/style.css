@@ -114,3 +114,43 @@ textarea {
 .apigrup {
     padding-top: 50px;
 }
+
+#flm {
+    width: 70%;
+    height: 80%;
+}
+
+#mtb {
+    width: 70%;
+    height: 80%;
+}
+
+#fish {
+    width: 70%;
+    height: 80%;
+}
+
+.slidercapt {
+    -webkit-text-stroke: 1px black;
+}
+
+.hobi{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(135, 135, 135);   
+}
+
+.formiletisim{
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.mesaj{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(135, 135, 135); ;
+}
+
+.cTablo{
+    padding-bottom: 50px;
+}

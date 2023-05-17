@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş Yap</title>
+    <title>İlgi Alanlarım</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -43,33 +44,55 @@
             </ul>
         </div>
     </nav>
-    <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                    <div class="card-body p-5 text-center">
 
-                        <h3 class="mb-5">Giriş Yap</h3>
-
-                        <form action="login.php" name="login-form" onsubmit="return loginCheck()" method="post">
-                            <div class="mb-4">
-                                <input type="email" id="eposta" name="email" class="form-control form-control-lg"
-                                    placeholder="ogrno@sakarya.edu.tr" />
-                            </div>
-
-                            <div class="mb-4">
-                                <input type="password" id="sifre" name="passw" class="form-control form-control-lg"
-                                    placeholder="Şifre" />
-                            </div>
-                            <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
-                        </form>
-
-                    </div>
-                </div>
+    <div class="hobi">
+        <div class="card container-fluid w-75">
+            <h1 style=" text-align: center;">Film İzlemek</h1>
+            <img src="img/filmzle.jpg" id="flm" class="card-img-top container-fluid" alt="film-izlemek">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Film izlemek, benim için keyifli ve eğlenceli bir hobidir. Herhangi bir filmi izlemek,
+                    farklı dünyalara adım atmak ve farklı karakterlerle tanışmak gibi bir deneyim sunar. Ayrıca, iyi bir
+                    film izlemek, benim için ilham kaynağı olabilir ve hayal gücümü harekete geçirebilir. İstediğiniz film
+                    hakkında bilgi almak için aşağıdaki butona tıklayın.
+                </p>
+                <div class="text-center">
+                    <a href="app.html">
+                        <button type="button" class="btn-lg btn-primary">Film Ara</button>
+                    </a>
+                </div>        
+            </div>
+        </div> <br>
+        <div class="card container-fluid w-75">
+            <h1 style=" text-align: center;">Dağ Bisikleti</h1>
+            <img src="img/mtb.jpg" id="mtb" class="card-img container-fluid" alt="mtb">
+            <div class="card-body">
+                <p class="card-text text-center">
+                    Dağ bisikleti sporu, benim için adrenalin dolu ve heyecan verici bir aktivitedir. Dağ, orman ve engelli
+                    yollar
+                    gibi doğal ortamlarda bisiklet sürmek, hem bedensel hem de zihinsel olarak zorlu bir deneyim sunar.
+                    Normal yollarda
+                    sürmektense bu tarz ortamlarda sürmek daha fazla keyif verir.
+                </p>
+            </div>
+        </div><br>
+        <div class="card container-fluid w-75">
+            <h1 style=" text-align: center;">Balık Tutmak</h1>
+            <img src="img/fish.jpg" id="fish" class="card-img container-fluid" alt="fishing">
+            <div class="card-body">
+                <p class="card-text text-center">
+                    Her ne kadar gitmeye vaktim olmasa da balık tutmak,
+                    benim için hem keyifli hem de huzurlu bir aktivite. Doğanın içinde sessiz ve sakin bir
+                    şekilde bekleyerek balık tutmak, stres atmak ve zihni dinlendirmek için harika bir fırsat. Streslerden
+                    arındırıcı
+                    oldukça güzel bir aktivite.
+                </p>
             </div>
         </div>
+            
     </div>
-
+    
+   
     <footer class="bg-dark text-center text-lg-start alt_bolum">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <p class="text-light">Web Teknolojileri Proje | © 2023 Melih Onbaşı</p>
@@ -85,7 +108,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </body>
 
 </html>
