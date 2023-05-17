@@ -21,7 +21,7 @@ table {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    background-color: beige;
+    background-color: rgb(15, 35, 186);
     overflow-x: auto;
 }
 
@@ -61,6 +61,7 @@ th {
     width: 70%;
     height: 80%;
 }
+
 
 #ulucami2 {
     width: 70%;
@@ -154,3 +155,13 @@ textarea {
 .cTablo{
     padding-bottom: 50px;
 }
+
+@media (max-width: 750px) {
+    .table-light{
+        width : 100%;
+    }
+    .container-fluid{
+        width : 100% !important;
+        padding: 0;
+    }
+} 
