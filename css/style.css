@@ -21,13 +21,13 @@ table {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(15, 35, 186);
     overflow-x: auto;
+    border: 5px solid #000000;
 }
 
 td,
 th {
-    border: 5px solid #343434;
+    border: 5px solid #000000;
     text-align: left;
     padding: 10px;
 }
@@ -98,8 +98,7 @@ body {
 
 }
 
-textarea {
-    width: 300px;
+#mesaj{
     height: 100px;
 }
 
@@ -165,3 +164,13 @@ textarea {
         padding: 0;
     }
 } 
+
+#self{
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+
+.bursa p{
+font-size: large;
+}

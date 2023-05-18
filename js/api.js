@@ -23,7 +23,7 @@ $(document).ready(function() {
                 <img src="${data.Poster}" class="img-fluid rounded-start">
                 </div>
                 <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body"> <br><br>
                     <h4 class="card-title">${data.Title}</h4>
                     <p class="card-text">Tür: <b>${data.Genre}</b> </p>
                     <p class="card-text"><h7>Yayınlanma Tarihi:</h7> <b>${data.Released}</b></p>
